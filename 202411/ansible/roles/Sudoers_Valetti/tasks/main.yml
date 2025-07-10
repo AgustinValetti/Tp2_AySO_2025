@@ -1,0 +1,6 @@
+---
+- name: Permitir a GProfesores usar sudo sin clave
+  lineinfile:
+    path: /etc/sudoers
+    line: "%GProfesores ALL=(ALL) NOPASSWD: ALL"
+    validate: "visudo -cf %s"

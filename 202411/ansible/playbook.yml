@@ -1,0 +1,9 @@
+---
+- name: Ejecutar roles para el examen
+  hosts: localhost
+  become: yes
+  roles:
+    - role: 2PRecuperatorio
+    - role: Crea_Carpetas_Valetti
+    - role: Cambia_Propiedad_Valetti
+    - role: Sudoers_Valetti

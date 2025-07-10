@@ -1,0 +1,10 @@
+---
+- name: Crear directorio /UTN/Alumno
+  file:
+    path: /UTN/Alumno
+    state: directory
+
+- name: Crear directorio /UTN/Profesor
+  file:
+    path: /UTN/Profesor
+    state: directory

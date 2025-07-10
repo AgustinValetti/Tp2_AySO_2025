@@ -1,0 +1,1180 @@
+git clone https://github.com/sofiasartori/UTN-FRA_SO_Examenes.git
+./UTN-FRA_SO_Examenes/202411/script_Precondicion.sh
+source ~/.bashrc
+sudo apt install git
+sudo apt install wget gpg
+sudo update
+sudo apt update
+UBUNTU_CODENAME=jammy
+wget -O- "https://keyserver.ubuntu.com/pks/lookup?fingerprint=on&op=get&search=0x6125E2A8C77F2818FB7BD15B93C4A3FD7BB9C367" | sudo gpg --dearmour -o /usr/share/keyrings/ansible-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/ansible-archive-keyring.gpg] http://ppa.launchpad.net/ansible/ansible/ubuntu $UBUNTU_CODENAME main" | sudo tee /etc/apt/sources.list.d/ansible.list
+sudo apt update && sudo apt install ansible
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+# Add the repository to Apt sources:
+echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo ls -la fdisk
+free -h
+ls -la fdisk
+fdisk ls -la
+fdisk /dev/sdd
+sudo fdisk /dev/sdd
+sudo ls -la fdisk
+sudo fdisk ls -l
+sudo fdisk ls -la
+sudo fdisk -l
+free -h
+sudo mkswap /dev/sdc
+free -h
+sudo swapon /dev/sdc
+free -h
+swapon -s
+lsblk
+df -h
+sudo fdisk /dev/sdc
+free -h
+sudo fdisk /dev/sdc
+free -h
+sudo mkswap /dev/sdc1
+sudo mkswap /dev/sdc2
+sudo mkswap /dev/sdc
+sudo pvcreate /dev/sdc
+sudo fdisk /dev/sdc
+free -h
+sudo fdisk -l
+free -h
+sudo fdisk /dev/sdc1 /dev/sdc2
+sudo fdisk /dev/sdc1
+sudo fdisk /dev/sdc
+free -h
+sudo fdisk /dev/sdc
+sudo fdisk /dev/sdb
+sudo fdisk /dev/sdd
+swapon =f
+sudo swapon =f
+swapon -f
+cd /home
+free -h
+sudo fdisk /dev/sdd
+free -h
+sudo fdisk /dev/sdd
+sudo fdisk /dev/sdc
+sudo swapoff /dev/sdc1
+sudo swapoff /dev/sdc
+sudo fdisk /dev/sdc
+sudo swapoff -a
+sudo fdisk /dev/sdc
+mkswap /dev/sdc1
+sudo mkswap /dev/sdc1
+sudo swapon /dev/sdc1
+free -h
+sudo fdsik /dev/sdd
+sudo fdisk /dev/sdd
+free -h
+sudo fdisk /dev/sdd
+pvcreate /dev/sdd1 /dev/sdd2
+sudo pvcreate /dev/sdd1 /dev/sdd2
+sudo pvcreate vg_datos /dev/sdd1 /dev/sdd2
+lvcreate -L 10M -n lv_docker vg_datos
+sudo lvcreate -L 10M -n lv_docker vg_datos
+sudo vgcreate vg_datos /dev/sdd1 /dev/sdd2
+lv create -L 10M -n lv_docker vg_datos
+sudo lv create -L 10M -n lv_docker vg_datos
+sudo lvcreate -L 10M -n lv_docker vg_datos
+sudo lvcreate -l 100%FREE -n lv_multimedia vg_datos
+mkfs.ext4 /dev/vg_datos/lv_docker
+mkfs.ext4 /dev/vg_datos/lv_multimedia
+sudo mkfs.ext4 /dev/vg_datos/lv_docker
+sudo mkfs.ext4 /dev/vg_datos/lv_multimedia
+sudo su -
+sudo lvs
+sudo vgs
+sudo pvs
+free -h
+ls -la 
+ls -la ~./
+ls -la ~/
+ls -la ~/RTA_Examen_20250706
+vim ~/RTA_Examen_20250706/Punto_A.sh
+cat ~/RTA_Examen_20250706/Punto_A.sh
+sudo +x chmod ~/RTA_Examen_20250706/Punto_A.sh
+sudo chmod +x ~/RTA_Examen_20250706/Punto_A.sh
+~/RTA_Examen_20250706/Punto_A.sh
+vim ~/RTA_Examen_20250706/Punto_A.sh
+sudo chmod +x ~/RTA_Examen_20250706/Punto_A.sh
+vim ~/RTA_Examen_20250706/Punto_A.sh
+~/RTA_Examen_20250706/Punto_A.sh
+free -h
+sudo pvs
+sudo vgs
+sudo lvs
+free -h
+sudo ls -la /home/agustin/UTN-FRA_SO_Examenes/202411/bash_script/Lista_Animales.txt
+sudo ls -la /UTN-FRA_SO_Examenes/202411/bash_script/Lista_Animales.txt
+sudo ls -la ~/UTN-FRA_SO_Examenes/202411/bash_script/Lista_Animales.txt
+sudo ls -la ~/UTN-FRA_SO_Examenes/202411/bash_script/
+sudo vim ~/UTN-FRA_SO_Examenes/202411/bash_script/
+sudo vim ~/UTN-FRA_SO_Examenes/202411/bash_script/Lista_Animales.txt
+sudo vim ~/UTN-FRA_SO_Examenes/202411/bash_script/
+sudo vim ~/UTN-FRA_SO_Examenes/202411/bash_script/Lista_Animales.txt
+cd ..
+ls -la
+cd /usr
+/local
+cd /local
+cd /bin
+ls -la
+ls -l
+cd home
+cd /home
+ls -l
+cd /user/local/bin/agustin
+mkdir -p /tmp/Animales/{Agua,Tierra/{Mamiferos,Oviparos}}
+ls -la /tmp/Animales/{Agua,Tierra/{Mamiferos,Oviparos}}
+cd ~./
+sudo cd ~./
+ls -la ~/UTN-FRA_SO_Examenes/202411/
+ls -la ~/UTN-FRA_SO_Examenes/202411/bash_script
+sudo vim /usr/local/bin/agustin_clasif_animales.sh
+sudo chmod +x /usr/local/bin/agustin_clasif_animales.sh
+/usr/local/bin/agustin_clasif_animales.sh
+sudo /usr/local/bin/agustin_clasif_animales.sh
+tree
+sudo tree
+sudo apt install tree
+tree
+cp /tmp/animales.txt ~/RTA_Examen_20250705/
+cp -r /tmp/Animales ~/RTA_Examen_20250705/
+cp /usr/local/bin/agustin_clasif_animales.sh ~/RTA_Examen_20250705/
+sudo cp /tmp/animales.txt ~/RTA_Examen_20250705/
+sudo cp -r /tmp/Animales ~/RTA_Examen_20250705/
+sudo cp /usr/local/bin/agustin_clasif_animales.sh ~/RTA_Examen_20250705/
+tree
+/usr/local/bin/agustin_clasif_animales.sh ~/RTA_Examen_20250705/
+/usr/local/bin/agustin_clasif_animales.sh
+ls -la /home/agustin/RTA_Examen_20250705/Lista_Animales.txt
+sudo ls -la /home/agustin/RTA_Examen_20250705/Lista_Animales.txt
+vim /home/agustin/RTA_Examen_20250705/Lista_Animales.txt
+/usr/local/bin/agustin_clasif_animales.sh /ruta/a/Lista_Animales.txt
+sudo vim /usr/local/bin/agustin_clasif_animales.sh
+/usr/local/bin/agustin_clasif_animales.sh ~/ruta/a/Lista_Animales.txt
+/usr/local/bin/agustin_clasif_animales.sh ~/UTN=FRA_SO_Examenes/202411/bash_script/Lista_Animales.txt
+cat /tmp/animales.txt
+ls -l /tmp/Animales/Agua /tmp/Animales/Tierra/Mamiferos /tmp/Animales/Tierra/Oviparos
+/usr/local/bin/agustin_clasif_animales.sh /ruta/a/Lista_Animales.txt
+vim ~/agustin_clasif_animales.sh
+sudo vim /usr/local/bin/agustin_clasif_animales.sh  
+cd ..
+ls -la 
+ls -la [200~/usr/local/bin/agustin_clasif_animales.sh~as
+ls -la /usr/local/bin/agustin_clasif_animales.sh
+ls -la /usr/local/bin/
+cat /usr/local/bin/agustin_clasif_animales.sh
+vim /usr/local/bin/agustin_clasif_animales.sh
+sudo rm /usr/local/bin/agustin_clasif_animales.sh
+exit
+/usr/local/bin/agustin_clasif_animales.sh  
+sudo su -
+sudo rm /usr/local/bin/agustin_clasif_animales.sh
+cd ..
+sudo rm /usr/local/bin/agustin_clasif_animales.sh
+sudo rm -r /usr/local/bin/agustin_clasif_animales.sh
+vim /usr/local/bin/agustin_clasif_animales.sh
+sudo vim /usr/local/bin/agustin_clasif_animales.sh
+sudo chmod +x /usr/local/bin/agustin_clasif_animales.sh
+/usr/local/bin/agustin_clasif_animales.sh
+sudo /usr/local/bin/agustin_clasif_animales.sh
+sudo vim /usr/local/bin/agustin_clasif_animales.sh
+sudo /usr/local/bin/agustin_clasif_animales.sh
+/usr/local/bin/agustin_clasif_animales.sh /home/agustin/UTN-FRA_SO_Examenes/202411/bash_script/Lista_Animales.txt
+ls -ld /home/agustin/RTA_Examen_20250705
+sudo chown -R agustin:agustin /home/agustin/RTA_Examen_20250705
+ls -la /home/agustin/RTA_Examen_20250705
+/usr/local/bin/agustin_clasif_animales.sh /home/agustin/UTN-FRA_SO_Examenes/202411/bash_script/Lista_Animales.txt
+sudo tree
+sudo ls -la /usr/local/bin
+ls -la
+ls -la ~
+cd RTA_EXAMEN_20250705
+sudo cd /RTA_Examen_20250705
+cd /RTA_Examen_20250705
+ls -la ~/RTA_Examen_20250706
+ls -la ~/RTA_Examen_20250706/Punto_A.sh
+cat ~/RTA_Examen_20250706/Punto_A.sh
+cat ~/RTA_Examen_20250706/Punto_B.sh
+cat ~/RTA_Examen_20250705/Punto_B.sh
+cat ~/RTA_Examen_20250705/
+ls -la ~/RTA_Examen_20250705/
+sudo rm -rf ~/RTA_Examen_20250705/
+ls -la ~/
+ls -la ~/RTA_Examen_20250706/
+ls -la /home/agustin/RTA_Examen_20250706/
+sudo vim /usr/local/bin/agustin_clasif_animales.sh
+sudo tree
+/usr/local/bin/agustin_clasif_animales.sh
+/usr/local/bin/agustin_clasif_animales.sh /home/agustin/UTN-FRA_SO_Examenes/202411/bash_script/Lista_Animales.txt
+sudo tree
+sudo vim /usr/local/bin/agustin_clasif_animales.sh
+cd ..
+ls -la
+cd /usr
+ls -la
+cd /lib
+ls -la
+cd ..
+ls -la
+cd /tmp
+ls -la
+cat Animales
+cat /Animales
+ls -la /Animales
+ls -la Animales
+ls -la Animales/Agua
+ls -la Animales/Tierra
+cat animales.txt
+cd ..
+cd /home
+ls -la ~
+cd RTA_Examen_20250706
+cd /RTA_Examen_20250706
+cd ~/RTA_Examen_20250706
+ls -la
+sudo rm -rf Animales
+sudo rm animales.txt
+ls -la
+ls -la agustin_clasif_animales.sh
+vim agustin_clasif_animales.sh
+cd ..
+cd /home
+docket --status
+docker version
+docker --version
+cat /etc/shadow
+sudo cat /etc/shadow
+cat > ~UTN-FRA_SO_Examenes/202411/docker/web/file/info.txt << 'EOF'
+Nombre: Agustin
+ID: 1002
+Hash: $y$j9T$6A6.rbKK9f8nW32geRuzk/$bVc4JgFDWg8.X8k.kin8y257CQM32P8zy6sus3zKoCD
+EOF
+
+cat > ~/UTN-FRA_SO_Examenes/202411/docker/web/file/info.txt << 'EOF'
+Nombre: Agustin
+ID: 1002
+> Hash: $y$j9T$6A6.rbKK9f8nW32geRuzk/$bVc4JgFDWg8.X8k.kin8y257CQM32P8zy6sus3zKoCD
+> EOF
+
+docker build -t web2-agustin ~/UTN-FRA_SO_Examenes/202411/docker/web
+
+'EOF'
+'EOF'
+EOF
+
+sudo vim ~/UTN-FRA_SO_Examenes/202411/docker/web/file/info.txt
+cat > ~/UTN-FRA_SO_Examenes/202411/docker/web/file/info.txt << EOF
+Nombre: Agustin
+ID: 1002
+Hash:$y$j9T$6A6.rbKK9f8nW32geRuzk/$bVc4JgFDWg8.X8k.kin8y257CQM32P8zy6sus3zKoCD
+EOF
+
+docker build -t web2-agustin ~/UTN-FRA_SO_Examenes/202411/docker/web
+snap install docker
+sudo snap install docker
+docker build -t web2-agustin ~/UTN-FRA_SO_Examenes/202411/docker/web
+docker login -u agusvaletti
+docker build -t web2-agustin ~/UTN-FRA_SO_Examenes/202411/docker/web
+sudo docker build -t web2-agustin ~/UTN-FRA_SO_Examenes/202411/docker/web
+cd ~/UTN-FRA_SO_Examenes/202411/docker/
+ls -la
+cd /web
+ls -la /web/
+ls -la /web
+ls -la ~/web
+ls -la ~./web
+~/web ls -la
+cd ~/web
+ls -la
+cd /web
+tree
+docker push agusvaletti/web2-agustin
+sudo usermod -aG docker agustin
+groups
+exit
+groups
+sudo usermod -aG docker agustin
+cd ..
+sudo usermod -aG docker agustin
+groups
+exit
+sudo groupadd docker
+sudo usermod -aG docker agustin
+exit
+groups
+cd ..
+groups
+docker push agusvaletti/web2-agustin
+docker build -t web2-agustin ~/UTN-FRA_SO_Examenes/202411/docker/web
+cat > ~/UTN-FRA_SO_Examenes/202411/docker/docker-compose.yml << EOF
+version: '3'
+services:
+  web:
+    image: agusvaletti/web2-agustin
+    ports:
+      - "81:80"
+    volumes:
+      - ./web/file:/usr/share/nginx/html/file/
+EOF
+
+docker build -t web2-agustin ~/UTN-FRA_SO_Examenes/202411/docker/web
+sudo groupadd docker
+sudo usermod -aG docker agustin
+groups
+/etc/groups
+/etc/group
+sudo /etc/group
+sudo /etc/groups
+sudo /etc/group
+vim ~/UTN-FRA_SO_Examenes/202411/web/Dockerfile
+cd ~/UTN-FRA_SO_Examenes/202411/docker/
+vim web/index.html
+vim web/file/info.txt
+docker build -t agusvaletti/web2-agustin .
+sudo groupadd docker
+sudo usermod -aG docker agustin
+docker build -t agusvaletti/web2-agustin .
+exit
+groups
+cd ..
+groups
+cat /etc/groups
+cat /etc/group
+cd ~/UTN-FRA_SO_Examenes/202411/docker/
+docker build -t agusvaletti/web2-agustin .
+docker push agusvaletti/web2-agustin
+mv ~/UTN-FRA_SO_Examenes/202411/web/Dockerfile ~/UTN-FRA_SO_Examenes/202411/docker/
+ls -la
+cd /web
+tree
+vim ~/UTN-FRA_SO_Examenes/202411/docker/Dockerfile
+tree
+docker build -t agusvaletti/web2-agustin .
+vim docker-compose.yml
+docker-compose up -d
+docker push agusvaletti/web2-agustin
+curl http://localhost:81
+docker-compose up -d
+tree
+vim ~/UTN-FRA_SO_Examenes/202411/docker/web/index.html
+docker-compose down
+docker build --no-cache -t agusvaletti/web2-agustin .
+docker push agusvaletti/web2-agustin
+docker-compose up -d
+curl http://localhost:81
+vim ~/UTN-FRA_SO_Examenes/202411/docker/web/index.htmlcat ~/UTN-FRA_SO_Examenes/202411/docker/web/index.html
+docke rps
+docker run -d -p 81:80 -v ~/UTN-FRA_SO_Examenes/202411/docker/web:/usr/share/nginx/html --name mi-web nginx
+cat ~/UTN-FRA_SO_Examenes/202411/docker/docker-compose.yml
+cat ~/UTN-FRA_SO_Examenes/202411/docker/web/index.html
+docker run --rm agusvaletti/web2-agustin ls -la /usr/share/nginx/html/
+cd ~/UTN-FRA_SO_Examenes/202411/docker
+docker-compose down
+ls -la web/
+vim docker-compose.yml
+ls -la web/scripts/
+docker-compose up -d
+curl http://localhost:81
+docker-compose down
+vim docker-compose.yml
+docker-compose up -d
+docker exec -it docker-web-1 ls -la /usr/share/nginx/html/
+curl http://localhost:81
+sudo netstat -tlnp | grep :81
+sudo ss -tlnp | grep :81
+docker ps
+curl http://localhost:81
+curl http://127.0.0.1:81
+docker inspect docker-web-1 | grep IPAddress
+docker-compose restart
+docker logs docker-web-1
+wget -qO- http://localhost:81
+vim docker-compose.yml
+docker-compose down
+docker-compose up -d
+sudo iptables -L -n | grep 81
+sudo ufw status
+sudo ss -tlnp | grep :8080
+docker ps
+wget -qO- http://localhost:8080
+curl http://127.0.0.1:8080
+docker ps | grep "8080"
+lsof -i :8080 2>/dev/null || echo "lsof no disponible"
+telnet localhost 8080
+cd /home
+ls ~/RTA_Examen_20250705/ansible/roles/
+ls -la ~/RTA_Examen_20250705/ansible/roles/
+sudo ls -la ~/RTA_Examen_20250705/ansible/roles/
+sudo ls -la ~/RTA_Examen_20250705/ansible/roles
+sudo ls -la ~/RTA_Examen_20250705/ansible/
+sudo ls -la ~/RTA_Examen_20250705/
+ls -la ~/RTA_Examen_20250705/
+ls -la .~/RTA_Examen_20250705/
+ls -la ~./RTA_Examen_20250705/
+ls -la 
+ls -la /agustin
+sudo ls -la /agustin
+cd ~/
+ls ~/
+cd ~/UTN-FRA_SO_Examenes
+ls -la
+cd ~/UTN-FRA_SO_Examenes/202411/ansible
+ls -la
+vim playbook.yml
+cd /roles
+cd ~/roles
+cd /roles/
+cd roles/
+ls -la
+tree
+cd ..
+tree
+mkdir -p ~/RTA_Examen_20250705/ansible/roles/Crea_Carpetas_Valetti/tasks
+mkdir -p ~/RTA_Examen_20250705/ansible/roles/Cambia_Propiedad_Valetti/tasks
+mkdir -p ~/RTA_Examen_20250705/ansible/roles/Sudoers_Valetti/tasks
+tree
+mkdir -p ~/RTA_Examen_20250706/ansible/roles/Sudoers_Valetti/tasks
+tree
+cd roles/
+mkdir Crea_Carpetas_Valetti/taks
+mkdir Crea_Carpetas_Valetti
+ls -l
+mkdir Cambia_Propiedad_Valetti
+mkdir Sudoers_Valetti
+vim roles/2PRecuperatorio/main.yml
+sudo vim roles/2PRecuperatorio/main.yml
+sudo chmod 777 /Cambia_Propiedad_Valetti
+sudo chmod 777 /Cambia_Propiedad_Valetti/
+history
+ls la
+ls -la
+rm -rf 2PRecuperatorio
+rm -rf Cambia_Propiedad_Valetti
+rm -rf Crea_Carpetas_Valetti
+rm -rf Sudoers_Valetti
+ls -la
+ls
+ls -l
+free -h
+cat ~./Punto_a.sh
+cat ~./RTA_Examen_20250706/Punto_a.sh
+cat /RTA_Examen_20250706/Punto_a.sh
+cat ~/RTA_Examen_20250706/Punto_a.sh
+cd ..
+ls - la
+ls
+cd RTA_Examen_20250706
+ls -la
+cat Punto_A.sh
+cd ..
+cd ~/UTN-FRA_SO_Examenes/202411/ansible/roles
+mkdir -p roles/{2PRecuperatorio,tareas_Crea_Carpetas_Valetti,tareas_Cambia_Propiedad_Valetti,tareas_Sudoers_Valetti}/tasks
+ls -la
+cd /roles
+cd roles/
+ls 0la
+ls -la
+cd ..
+rm -rf roles
+ls -la
+mkdir -p {2PRecuperatorio,tareas_Crea_Carpetas_Valetti,tareas_Cambia_Propiedad_Valetti,tareas_Sudoers_Valetti}/tasks
+ls -la
+cat << 'EOF' > playbook.yml
+- hosts: localhost
+  become: true
+  tasks:
+    - include_tasks: roles/2PRecuperatorio/tasks/main.yml
+    - include_tasks: roles/tareas_Crea_Carpetas_Valetti/tasks/main.yml
+    - include_tasks: roles/tareas_Cambia_Propiedad_Valetti/tasks/main.yml
+    - include_tasks: roles/tareas_Sudoers_Valetti/tasks/main.yml
+EOF
+
+cat << 'EOF' > roles/2PRecuperatorio/tasks/main.yml
+- name: Crear grupo GProfesores
+  ansible.builtin.group:
+    name: GProfesores
+    state: present
+
+- name: Crear grupo GAlumnos
+  ansible.builtin.group:
+    name: GAlumnos
+    state: present
+
+- name: Crear usuario profesor
+  ansible.builtin.user:
+    name: profesor
+    groups: GProfesores
+    state: present
+
+- name: Crear usuario alumno
+  ansible.builtin.user:
+    name: alumno
+    groups: GAlumnos
+    state: present
+EOF
+
+cat << 'EOF' > /2PRecuperatorio/tasks/main.yml 
+- name: Crear grupo GProfesores
+  ansible.builtin.group:
+    name: GProfesores
+    state: present
+
+- name: Crear grupo GAlumnos
+  ansible.builtin.group:
+    name: GAlumnos
+    state: present
+
+- name: Crear usuario profesor
+  ansible.builtin.user:
+    name: profesor
+    groups: GProfesores
+    state: present
+
+- name: Crear usuario alumno
+  ansible.builtin.user:
+    name: alumno
+    groups: GAlumnos
+    state: present
+EOF
+
+rear usuario profesor
+- name: Crear usuario alumno
+EOF
+ls -la
+cd ..
+rm -rf roles
+ls -la
+cd ..
+git@github.com:AgustinValetti/Tp_2_Recu_AySO.git
+git git@github.com:AgustinValetti/Tp_2_Recu_AySO.git
+git remote add origin git@github.com:AgustinValetti/Tp_2_Recu_AySO.git
+git branch -M main
+git push -u origin main
+git init
+git commit -m "first commit"
+git add .
+git rm --cached UTN-FRA_SO_Examenes
+ls -la
+tree
+rm -rf RTA_Examen_20250705
+tree
+cp -r UTN-FRA_SO_Examenes/202411
+cp -r /UTN-FRA_SO_Examenes/202411
+cp -r ~/UTN-FRA_SO_Examenes/202411
+cp -r ~UTN-FRA_SO_Examenes/202411
+cp -r ~/UTN-FRA_SO_Examenes/202411
+cp -r ~/UTN-FRA_SO_Examenes/202411 ./
+git clone git@github.com:TuUsuarioGitHub/UTNFRA_SO_Recu_2do_TP_Valetti.git
+cd UTNFRA_SO_Recu_2do_TP_Valetti
+git status
+cp -r ~/UTN-FRA_SO_Examenes/202411 ./
+tree
+ls -la
+mkdir -p ~/UTN-FRA_SO_Examenes/202411/ansible/roles
+mkdir -p ~/UTN-FRA_SO_Examenes/202411/ansible/roles/2PRecuperatorio/tasks
+mkdir -p ~/UTN-FRA_SO_Examenes/202411/ansible/roles/Crea_Carpetas_Valetti/tasks
+mkdir -p ~/UTN-FRA_SO_Examenes/202411/ansible/roles/Cambia_Propiedad_Valetti/tasks
+mkdir -p ~/UTN-FRA_SO_Examenes/202411/ansible/roles/Sudoers_Valetti/tasks
+tree
+cat > ~/UTN-FRA_SO_Examenes/202411/ansible/roles/2PRecuperatorio/tasks/main.yml << 'EOF'
+---
+- name: Crear grupo GProfesores
+  group:
+    name: GProfesores
+
+- name: Crear grupo GAlumnos
+  group:
+    name: GAlumnos
+
+- name: Crear usuario Profesor y asignar grupo
+  user:
+    name: Profesor
+    groups: GProfesores
+    append: yes
+
+- name: Crear usuario alumno y asignar grupo
+  user:
+    name: alumno
+    groups: GAlumnos
+    append: yes
+EOF
+
+cat > ~/UTN-FRA_SO_Examenes/202411/ansible/roles/Crea_Carpetas_<tu-apellido>/tasks/main.yml << 'EOF'
+---
+- name: Crear directorio /UTN/Alumno
+  file:
+    path: /UTN/Alumno
+    state: directory
+
+- name: Crear directorio /UTN/Profesor
+  file:
+    path: /UTN/Profesor
+    state: directory
+EOF
+
+cat > ~/UTN-FRA_SO_Examenes/202411/ansible/roles/Crea_Carpetas_Valetti/tasks/main.yml << 'EOF'
+---
+- name: Crear directorio /UTN/Alumno
+  file:
+    path: /UTN/Alumno
+    state: directory
+
+- name: Crear directorio /UTN/Profesor
+  file:
+    path: /UTN/Profesor
+    state: directory
+EOF
+
+cat > ~/UTN-FRA_SO_Examenes/202411/ansible/roles/Cambia_Propiedad_Valetti/tasks/main.yml << 'EOF'
+---
+- name: Asignar ownership de /UTN/Alumno a usuario alumno
+  file:
+    path: /UTN/Alumno
+    owner: alumno
+
+- name: Asignar ownership de /UTN/Profesor a usuario profesor
+  file:
+    path: /UTN/Profesor
+    owner: profesor
+EOF
+
+cat > ~/UTN-FRA_SO_Examenes/202411/ansible/roles/Sudoers_Valetti/tasks/main.yml << 'EOF'
+---
+- name: Permitir a GProfesores usar sudo sin clave
+  lineinfile:
+    path: /etc/sudoers
+    line: "%GProfesores ALL=(ALL) NOPASSWD: ALL"
+    validate: "visudo -cf %s"
+EOF
+
+cat > ~/UTN-FRA_SO_Examenes/202411/ansible/playbook.yml << 'EOF'
+---
+- name: Ejecutar roles para el examen
+  hosts: localhost  # Ejecuta en el servidor local
+  roles:
+    - role: 2PRecuperatorio
+    - role: Crea_Carpetas_<tu-apellido>
+    - role: Cambia_Propiedad_<tu-apellido>
+    - role: Sudoers_<tu-apellido>
+EOF
+
+tree
+cat > ~/RTA_Examen_20250706/Punto_D.sh << 'EOF'
+#!/bin/bash
+ansible-playbook -i ~/UTN-FRA_SO_Examenes/202411/ansible/inventory/hosts ~/UTN-FRA_SO_Examenes/202411/ansible/playbook.yml
+EOF
+
+chmod +x ~/RTA_Examen_20250706/Punto_D.sh
+~/RTA_Examen_20250706/Punto_D.sh
+vim ~/UTN-FRA_SO_Examenes/202411/ansible/playbook.yml
+~/RTA_Examen_20250706/Punto_D.sh
+vim ~/UTN-FRA_SO_Examenes/202411/ansible/playbook.yml
+~/RTA_Examen_20250706/Punto_D.sh
+vim  ~/UTN-FRA_SO_Examenes/202411/ansible/roles/Cambia_Propiedad_Valetti/tasks/main.yml
+~/RTA_Examen_20250706/Punto_D.sh
+tree
+ls -;a ~/RTA_Examen_20250706/Punto_D.sh
+ls -la ~/RTA_Examen_20250706/Punto_D.sh
+cat ~/RTA_Examen_20250706/Punto_D.sh
+cat ~/RTA_Examen_20250706/Punto_A.sh
+cat ~/RTA_Examen_20250706/Punto_B.sh
+cat ~/RTA_Examen_20250706/Punto_c.sh
+cat ~/RTA_Examen_20250706/Punto_D.sh
+cd ~/RTA_Examen_20250706
+exit
+cd ..
+tree
+cd RTA_Examen_20250706
+cd RTA_Examen_20250706/
+cd /RTA_Examen_20250706
+cd ~/RTA_Examen_20250706
+tree
+ls -Punto_D.sh
+cat Punto_D.sh
+ls -la ansible
+ls -la ansible/roles
+ls -la ansible/roles/Sudoers_Valetti
+tree ansible/roles/Sudoers_Valetti
+cd ..
+history
+vim ~/UTN-FRA_SO_Examenes/202411/ansible/playbook.yml
+~/RTA_Examen_20250706/Punto_D.sh
+tree
+sudo rm -rf  ~/RTA_Examen_20250706/ansible
+tree
+~/RTA_Examen_20250706/Punto_D.sh
+tree
+vim ~/RTA_Examen_20250706/Punto_B.sh
+ls -la
+cd UTN-FRA_SO_Examenes
+cd /202411/
+cd 202411/
+cd bash_script/
+ls -la
+cd /home
+vim ~/RTA_Examen_20250706/Punto_B.sh
+tree
+vim ~/RTA_Examen_20250706/Punto_B.sh
+sudo vim ~/RTA_Examen_20250706/Punto_B.sh
+~/RTA_Examen_20250706/Punto_B.sh
+sudo chmod +x ~/RTA_Examen_20250706/Punto_B.sh
+~/RTA_Examen_20250706/Punto_B.sh
+tree
+docker --version
+docker ps
+docker ps --format "table {{.Names}}\t{{.Ports}}"
+docker images
+docker run -d -p 5000:5000 agusvaletti/web2-agustin 
+docker ps
+docker stop 9c3e12773dcd
+docker rm 9c3e12773dcd
+docker run -d -p 8080:80 --name mi_web agusvaletti/web2-agustin:latest
+docker stop 9c3e12773dcd
+docker rm 9c3e12773dcd
+docker ps
+docker logs mi_web  # Usa el nombre del contenedor
+tree
+cd UTN_FRA_SO_Examenes
+cd /UTN_FRA_SO_Examenes
+cd /UTN-FRA_SO_Examenes
+cd /UTN-FRA_SO_Examenes/
+cd UTN-FRA_SO_Examenes/
+cd /UTN-FRA_SO_Examenes
+cd /UTN-FRA_SO_Examenes/
+cd ~/UTN-FRA_SO_Examenes/
+ls -la
+cd /202411
+cd ~/202411
+ls -la
+cd ~/docker
+cd docker
+ls -la
+vim Dockerfile
+docker exec -it mi_web sh
+ls /usr/share/nginx/html
+ls /usr/share/nginx/html/img
+vim Dockerfile
+ls -la
+tree /web
+ls -la /web
+cd web
+ls -la
+cat index.html
+cd ..
+ls -la
+vim docker-compose.yml
+docker compose up--build
+docker compose up --build
+docker stop mi_web
+docker rm mi_web
+docker compose up --build
+cd home
+cd /home
+ls -la
+rm -rf Profesor
+sudo rm -rf Profesor
+sudo rm -rf alumno
+tree
+cd ~/UNT-FRA_SO_Examenes
+cd ~/UNT-FRA_SO_Examenes/
+cd ~UNT-FRA_SO_Examenes/
+cd ~/UNT-FRA_SO_Examenes
+cd ~/UTN-FRA_SO_Examenes
+ls -la
+cd ~/UTN-FRA_SO_Examenes/202411
+ls -la
+cd docker
+docker exec -it mi_web sh
+ls -l /usr/share/nginx/html/
+ls -la
+docker ps -a
+docker start 18ad015fc6a3_mi_web
+docker rm 18ad015fc6a3_mi_web mi-web
+docker exec -it 18ad015fc6a3_mi_web sh
+docker ps
+cd web
+ls -la
+cd ..
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi $(docker images -q)
+docker volume rm $(docker volume ls -q)
+cd ..
+docker volume rm $(docker volume ls -q)
+docker network rm $(docker network ls -q | grep -v "bridge\|host\|none")
+docker system prune -a --volumes
+tree
+rm -rf docker
+tree
+docker --version
+mkdir docker
+cd docker
+mkdir -p web/file
+cd web
+ls -la
+vim index.html
+cd ..
+tree
+vim web/filo/info.txt 
+sudo chmod +x info.txt
+sudo chmod +x web/file/info.txt
+sudo chmod +x /web/file/info.txt
+vim web/file/info.txt 
+ls -la
+vim Dockerfile
+vim docker-compose.yml
+docker build -t agusvaletti/web2-valetti .
+docker login -u agusvaletti
+docker build -t agusvaletti/web2-valetti .
+docker push agusvaletti/web2-valetti
+docker compose up -d
+curl http://localhost:81
+docker ps
+vim docker-compose.yml
+sudo vim docker-compose.yml
+docker compose down
+docker compose up -d
+sudo vim docker-compose.yml
+docker compose down
+docker compose up -d
+docker compose down
+sudo vim docker-compose.yml
+docker compose down
+docker compose up -d
+curl http://localhost:81
+cat /etc/group
+sudo apt install net-tools
+sudo netstat -putona |grep ":80"
+sudo netstat -putona |grep ":81"
+sudo netstat -putona | grep ":80"
+sudo netstat -putona |grep ":80"
+sudo netstat -putona |grep ":81"
+docker ps
+cd ..
+docker run -d -p 81:80 -v "$PWD"/share/html:/usr/share/nginx/html ngix
+sudo docker run -d -p 81:80 -v "$PWD"/share/html:/usr/share/nginx/html ngix
+sudo docker run -d -p 81:80 -v "$PWD"/share/html:/usr/share/nginx/html nginx
+ls -la
+cd share
+ls -la
+cd ..
+cd docker
+ls -la
+cd ..
+rm rf share
+sudo rm -rf share
+cd docker
+sudo docker run -d -p 81:80 -v "$PWD"/share/html:/usr/share/nginx/html nginx
+ls -la
+docker ps
+cd ..
+cd ~/RTA_Examen_20250706/
+ls -la
+cd ..
+ls -la
+cd UTN-FRA_SO_Examenes/
+cd 202411/
+cd docker
+docker image list
+docker run -d -p 81:80 agusvaletti/web2-valetti
+docker ps
+docket stop docker-web-1
+docker stop docker-web-1
+docker run -d -p 81:80 agusvaletti/web2-valetti
+docker push agusvaletti/web2-valetti:latest
+docker run -d -p 81:80 agusvaletti/web2-valetti
+docker ps
+docket stop agusvaletti/web2-valetti
+docker stop agusvaletti/web2-valetti
+docker run -d -p 82:80 agusvaletti/web2-valetti
+curl http://localhost:82
+exit
+cd ..
+tree
+sudo systemctl stop docker
+sudo systemctl stop docker.socket
+sudo apt-get purge -y docker docker-engine docker.io docker-ce docker-ce-cli containerd runc
+sudo apt-get autoremove -y
+sudo rm -rf /var/lib/docker
+sudo rm -rf /etc/docker
+sudo rm -rf ~/.docker
+sudo rm -rf /var/run/docker.sock
+history
+sudo rm -rf /var/lib/docker
+sudo rm -rf /etc/docker
+sudo rm -rf ~/.docker
+sudo rm -rf /var/run/docker.sock
+sudo lsof +D /var/lib/docker
+sudo fuser -vam /var/lib/docker
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install -y     ca-certificates     curl     gnupg     lsb-release
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg |   sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo   "deb [arch=$(dpkg --print-architecture) \
+  signed-by=/etc/apt/keyrings/docker.gpg] \
+  https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+tree
+sudo usermod -aG docker agustin
+exec sudo su - agustin
+docker --version
+docker run hola
+docker run hello-world
+cd ~/agustin/202411/docker
+tree
+cd ~/UTN-FRA_SO_Examenes/202411/docker
+vim web/index.html
+id agustin
+vim web/file/info.txt
+ls -la
+vim Dockerfile
+docker build -t agusvaletti/web2-valetti:latest .
+sudo lvextend -L +490M /dev/vg_datos/lv_docker
+sudo resize2fs /dev/vg_datos/lv_docker
+sudo vgdisplay vg_datos
+mount | grep multimedia
+df -h /Multimedia
+sudo ls -lh /Multimedia
+df -h /var/lib/docker
+sudo vgdisplay vg_datos
+sudo pvdisplay
+agustin@TP2Recuperatorio:~/UTN-FRA_SO_Examenes/202411/docker$ sudo vgdisplay vg_datos
+agustin@TP2Recuperatorio:~/UTN-FRA_SO_Examenes/202411/docker$ sudo pvdisplay
+agustin@TP2Recuperatorio:~/UTN-FRA_SO_Examenes/202411/docker$
+sudo lvextend -L +490M /dev/vg_datos/lv_docker
+sudo lvextend -L +450M /dev/vg_datos/lv_docker
+sudo fdisk -l
+sudo pvcreate /dev/sdd4
+sudo vgextend vg_datos /dev/sdd4
+sudo lvextend -L +490M /dev/vg_datos/lv_docker
+sudo lvextend -L +430M /dev/vg_datos/lv_docker
+sudo resize2fs /dev/vg_datos/lv_docker
+df -h /var/lib/docker
+docker build -t agusvaletti/web2-valetti:latest .
+docker login -u agusvaletti
+docker compose up -d
+docker images
+docker ps
+curl localhost:81/file/info.txt
+docker push
+docker push agusvaletti/web2-valetti:latest
+docker compose up-d
+docker compose up -d
+docker tag agusvaletti/web2-valetti:latest agustvaletti/web2-valetti:latest
+docker ps
+docker push agustvaletti/web2-valetti:latest
+docker logout
+docker login
+docker push agustvaletti/web2-valetti:latest
+docker push agusvaletti/web2-valetti:latest
+docker tag agusvaletti/web2-valetti:latest agusvaletti/web3-valetti:latest
+docker images | grep agusvaletti
+docker push agusvaletti/web3-valetti:latest
+docker stop docker-web-1
+docker run -d --name docker-web-1 -p 81:80 agusvaletti/web3-valetti:latest
+docker rm docker-web-1
+docker run -d --name docker-web-1 -p 81:80 agusvaletti/web3-valetti:latest
+docker ps
+curl https://localhost:81
+curl http://localhost:81
+docker logs docker-web-1
+docker ps
+sudo netstat -tlnp | grep :81
+curl http://127.0.0.1:81
+sudo ufw status
+docker info | grep Username
+docker search agusvaletti
+docker images | grep web3-valetti
+docker push agusvaletti/web3-valetti:latest
+docker search agusvaletti
+docker ps
+docker logs --tail 20 docker-web-1
+curl -v http://localhost:81
+telnet localhost 81
+sudo lsof -i :81
+docker port docker-web-1
+sudo systemctl restart docker
+docker run -d --name docker-web-new -p 81:80 agusvaletti/web3-valetti:latest
+docker stop docker-web-new
+docker rm docker-web-new
+docker run -d --name docker-web-final -p 8080:80 agusvaletti/web3-valetti:latest
+curl http://localhost:8080
+docker push agusvaletti/web3-valetti:latest
+docker pull agusvaletti/web3-valetti:latest
+docker ps | grep 81
+ip addr show | grep "inet " | grep -v 127.0.0.1
+curl http://192.168.56.3:8080
+curl http://192.168.1.49:8080
+tree
+cd ..
+cd home
+tree
+cd 202411/docker
+docker compose down
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi $(docker images -aq)
+docker rmi -f 1dface6a7db5
+docker images -a
+docker volume rm $(docker volume ls -q)
+docker network rm $(docker network ls -q)
+cd ..
+rm -rf docker
+docker volume ls
+docker network ls
+sudo rm -rf docker
+ls -la
+git restore docker/
+ls -la
+cd docker
+ls -la
+vim web
+cd docker-compose.yml
+vim docker-compose.yml
+cd ..
+ls -la
+cd web/
+cd web
+cd /web
+ls -la
+cd docker
+cd web
+ls -la
+vim index.html
+cd file
+ls -la
+vim info.txt
+cd docker/
+cd docker
+cd ..
+docker build -t web2-Valetti .
+docker build -t web2-valetti .
+ls -la
+cd ..
+ls -la
+cd docker
+ls -la
+nano Dockerfile
+docker build -t web2-valetti .
+exit
+tree
+cd ..
+tree
+cd RTA_Examen_20250706
+cd ~RTA_Examen_20250706
+cd ~/RTA_Examen_20250706
+cd 202411
+cd /202411
+cd 202411/
+cd ~//202411
+ls
+cd docker
+cd home
+cd ..
+ls -l
+tree
+rm -rf 202411
+tree
+rm -rf /202411
+tree
+cd /UTN-FRA_SO_Examenes
+cd ~/UTN-FRA_SO_Examenes
+cd ~/UTN-FRA_SO_Examenes/202411
+cd ~/UTN-FRA_SO_Examenes/202411/docker
+docker login -u agus2109
+groups
+docker images
+docker logout
+sudo systemctl stop docker
+sudo systemctl stop docker.socket
+sudo docker container stop $(docker container ls -aq)
+sudo docker container rm $(docker container ls -aq)
+sudo docker image rm $(docker image ls -aq)
+sudo docker volume rm $(docker volume ls -q)
+sudo docker network rm $(docker network ls -q | grep -v "bridge\|host\|none")
+cd ..
+sudo docker container stop $(docker container ls -aq)
+sudo docker container rm $(docker container ls -aq)
+sudo docker image rm $(docker image ls -aq)
+sudo docker volume rm $(docker volume ls -q)
+sudo docker network rm $(docker network ls -q | grep -v "bridge\|host\|none")
+sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli
+sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-cesudo rm -rf /var/lib/docker
+sudo rm -rf /etc/docker
+sudo rm -rf /var/run/docker.sock
+sudo rm -rf ~/.docker
+tree
+cat Dockerfile
+cd ~/docker
+ls -la
+cd docker
+ls -la
+cat Dockerfile
+groups agustin
+docker images
+docker build -t agustin/web2_agus2109:latest
+docker build -t agustin/web2_agus2109:latest .
+tree
+docker build -t agus2109/agusweb_agus:latest .
+docker --version
+cd ..
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+# Add the repository to Apt sources:
+echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+cd ~/UTN-FRA_SO_Examenes/202411/docker$
+cd ~/agustin/UTN-FRA_SO_Examenes/202411/docker
+cd ~/UTN-FRA_SO_Examenes/202411/docker
+docker --version
+docker version
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+docker build -t agus2109/agusweb_agus:latest .
+docker images
+docker login -u agus2109
+docker push agus2109/agusweb_agus:latest
+docker p
+docker ps
+docker compose up -d
+ls -la
+vim docker-compose.yml
+docker compose up -d
+docker ps
+curl localhost:81
+curl localhost:81/file/info.txt
+ip a | grep inet
+cd home
+cd /home
+dc ~-RTA_Examen_25250706
+cd ~/RTA_Examen_25250706
+cd ~/RTA_Examen_20250706
+ls -la
+vim Punto_C.sh
+curl localhost:81
+curl localhost:81/file/info.txt
+sudo chmod +x Punto_C.sh
+~/RTA_Examen_20250706/Punto_C.sh
+cd
+history
+history -a

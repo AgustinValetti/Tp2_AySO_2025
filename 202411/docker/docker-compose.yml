@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: agus2109/agusweb_agus:latest
+    ports:
+      - "81:80"
+    volumes:
+      - ./web/file:/usr/share/nginx/html/file
+
+        - 

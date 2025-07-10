@@ -1,0 +1,10 @@
+---
+- name: Asignar ownership de /UTN/Alumno a usuario alumno
+  file:
+    path: /UTN/Alumno
+    owner: alumno
+
+- name: Asignar ownership de /UTN/Profesor a usuario profesor
+  file:
+    path: /UTN/Profesor
+    owner: Profesor
